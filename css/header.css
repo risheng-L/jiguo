@@ -1,0 +1,30 @@
+header {
+  border-bottom: 2px solid #d5cab8;
+}
+header .header-box {
+  height: 75px;
+  line-height: 75px;
+}
+header .header-box .header-top {
+  width: 1000px;
+  margin: 0 auto;
+}
+header .header-box .header-top ul {
+  float: left;
+}
+header .header-box .header-top ul li {
+  float: left;
+  margin-right: 50px;
+  font-size: 16px;
+}
+header .header-box .header-top span {
+  float: right;
+}
+header .header-box .header-top span button {
+  margin-left: 30px;
+  width: 52px;
+  height: 32px;
+  background-color: #fff;
+  color: #f76251;
+  border: 1px solid #f76251;
+}
