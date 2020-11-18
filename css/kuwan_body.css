@@ -1,0 +1,24 @@
+.header-box .header-one a {
+    color: #fa6c6b;
+}
+.find {
+    text-align: center;
+    border-bottom: 1px solid #f7f7f7;
+}
+.find p {
+    color: #3a3a3b;
+    font-size: 35px;
+    margin: 45px 0;
+}
+.find-r {
+    color: #f9562d;
+    border-bottom: 2px solid #f9562d;
+}
+.find a {
+    display: inline-block;
+    width: 165px;
+    padding-bottom: 10px;
+}
+.find a:hover {
+    border-bottom: 2px solid #f9562d;
+}

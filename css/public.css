@@ -8,6 +8,10 @@
     width: 1200px;
     margin: 0 auto;
 }
+.area {
+    width: 1000px;
+    margin: 0 auto;
+}
 
 /* em 和 i 斜体的文字不倾斜 */
 em,

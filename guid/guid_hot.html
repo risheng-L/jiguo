@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/kuwan_body.css">
+    <link rel="stylesheet" href="../css/kuwan_play.css">
+</head>
+
+<body>
+    <!-- 公共酷玩 头部 -->
+    <header>
+        <div class="header-box clearfix w">
+           <div class="header-top">
+                <ul class="clearfix">
+                    <li><img src="../img/logonew.png" alt="" width="135px" height="50px"></li>
+                    <li><a href="">首页</a></li>
+                    <li><a href="../play/kuwan1.html">酷玩</a></li>
+                    <li class="header-one"><a href="">导购</a></li>
+                    <li><a href="../use/u_auto.html">试用</a></li>
+                    <li><a href="">报告</a></li>
+                </ul>
+                <span>
+                    <img src="../img/search.png" alt="">
+                    <button>注册</button>
+                    <button>登录</button>
+                </span>
+           </div>
+        </div>
+    </header>
+    <div class="find">
+        <p>导购清单</p>
+        <div class="find-two">
+           <a href="guid_new.html">最新</a>
+           <a href="" class="find-r">最热</a>
+        </div>
+    </div>
+
+    <section>
+        <div class="s-body w">
+            <ul class="clearfix" id="list">
+                <!-- <li>
+                    <img src="../img/k3.jpg" alt="" class="img-i">
+                    <p class="p">SCIO 微型光谱仪</p>
+                    <p>可以测定食物成分及营养</p>
+                    <span>￥ 1212
+                        <img src="../img/xin.png" alt="" class="img-l"><a href="">3</a> 
+                        <img src="../img/reply.png" alt=""><a href="">3</a>
+                    </span>
+                </li> -->
+            </ul>
+            <ul class="clearfix" id="lis">
+               
+            </ul>
+        </div>
+    </section>
+
+    <!-- 模板 -->
+    <script id="domm" type="text/x-dot-template">
+        {{~ it:value:index}}
+        <li>
+            <img src={{=value.img}} alt="" class="img-i">
+            <p class="p">{{=value.text}}</p>
+            <div class="pic clearfix">
+                
+                <div class="po clearfix">
+                    <p class="img-l"></p><p>{{=value.like}}</p>
+                    <p class="img-o"></p><p>{{=value.words}}</p>
+                </div>
+            </div>
+        </li>
+    {{~}}
+    </script>
+
+    <!-- 加载 -->
+    <div class="main_more">
+        <p class="nomain_loading">
+            <img src="../img/more.png" alt="">
+            点击加载更多
+        </p> 
+        <p class="nomain_load">
+            <img src="../img/loading-icon.gif" alt="">
+            正在加载
+        </p> 
+    </div>
+    
+
+    <!-- 底部 -->
+    <footer>
+        <div class="footer-box area clearfix">
+            <dl>
+                <dt><img src="../img/code.png" alt="" width="160px" height="160px"></dt>
+            </dl>
+            <dl>
+                <dt><img src="../img/logoImg.jpg" alt="" width="125px" height="50px"></dt>
+                <dd><a href="#">全球酷玩试用导购平台</a></dd>
+                <dd><a href="#">酷.新奇.好玩.品质</a></dd>
+                <dd><a href="#">&nbsp;</a></dd>
+                <dd><a href="#">微信添加 "JguoJguo"</a></dd>
+                <dd><a href="#">获取我们的服务</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">免费试用</a></dt>
+                <dd><a href="#">试用流程</a></dd>
+                <dd><a href="#">如何提高成功率</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">友情链接</a></dt>
+                <dd><a href="#">智东西</a></dd>
+                <dd><a href="#">搜狐数码</a></dd>
+                <dd><a href="#">凤凰数码</a></dd>
+                <dd><a href="#">泡泡网</a></dd>
+                <dd><a href="#">ZUK社区</a></dd>
+                <dd><a href="#">极客公园</a></dd>
+                <dd><a href="#">果库</a></dd>
+            </dl>
+            <dl class="eg">
+                <dd><a href="#">WEIBUSI</a></dd>
+                <dd><a href="#">腾讯科技</a></dd>
+                <dd><a href="#">凤凰科技</a></dd>
+                <dd><a href="#">PConline</a></dd>
+                <dd><a href="#">3W咖啡</a></dd>
+                <dd><a href="#">亿觅emie</a></dd>
+                <dd><a href="#">易迅易启玩</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">购买攻略</a></dt>
+                <dd><a href="#">美亚海购教程</a></dd>
+                <dd><a href="#">日亚海购教程</a></dd>
+                <dd><a href="#">海淘转运攻略</a></dd>
+                <dd><a href="#">kickstarter 众筹购买攻略</a></dd>
+                <dd><a href="#">indiegogo 众筹购买攻略</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">厂商合作</a></dt>
+                <dd><a href="#">关于极果</a></dd>
+                <dd><a href="#">联系我们</a></dd>
+                <dd><a href="#">商务合作：BD@jiguo.com</a></dd>
+                <dd><a href="#">CEO邮箱：CEO@jihuo.com</a></dd>
+            </dl>
+        </div>
+        <div class="last-foot">
+            <a href="">© 2016 极果版权所有</a>
+        </div>
+    </footer>
+    <script src="../js/doT.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/guid_new.js"></script>
+</body>
+
+</html>
