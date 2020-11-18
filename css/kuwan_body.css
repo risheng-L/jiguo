@@ -3,6 +3,7 @@
 }
 .find {
     text-align: center;
+    border-bottom: 1px solid #f7f7f7;
 }
 .find p {
     color: #3a3a3b;

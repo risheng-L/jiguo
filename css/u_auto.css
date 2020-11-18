@@ -1,0 +1,109 @@
+.t_title {
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+}
+.t_title a {
+  margin-right: 120px;
+  color: gray;
+}
+.t_title .auto {
+  color: black;
+}
+section {
+  padding-top: 40px;
+  background-color: #f7f7f7;
+}
+section .s-body ul li {
+  border-radius: 10px;
+  float: left;
+  width: 220px;
+  height: 250px;
+  position: relative;
+  margin: 0 40px 40px 40px;
+  background-color: #ffffff;
+}
+section .s-body ul li .img-i {
+  border-radius: 10px 10px 0 0;
+  width: 220px;
+  height: 130px;
+}
+section .s-body ul li .cont {
+  text-align: center;
+}
+section .s-body ul li .cont h3 {
+  font-size: 17px;
+  color: black;
+}
+section .s-body ul li .cont .ba a {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 5px;
+  border: 1px solid #a1cc88;
+}
+section .s-body ul li .cont .gray {
+  color: gray;
+}
+section .s-body ul li .cont .gray a {
+  color: gray;
+  border: 1px solid gray;
+}
+section .s-body ul li .cont .green {
+  color: green;
+}
+section .s-body ul li .cont .green a {
+  color: green;
+  border: 1px solid green;
+}
+section .s-body ul li .cont .red {
+  color: red;
+}
+section .s-body ul li .cont .red a {
+  color: red;
+  border: 1px solid red;
+}
+section .s-body ul li .cont span {
+  color: red;
+}
+section .s-body ul li .cont span a {
+  color: black;
+}
+section .s-body ul li .locad {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  width: 40px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  background-color: #f35644;
+  border-radius: 0px 10px 0px 10px;
+}
+section .s-body ul li .locad_p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+  width: 80px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  background-color: #fcf4cd;
+  border-radius: 0px 10px 0px 10px;
+}
+.main_more {
+  color: #fe483f;
+  text-align: center;
+  background-color: #f7f7f7;
+  font-size: 16px;
+  padding: 40px 0;
+}
+.main_more .nomain_loading {
+  display: block;
+}
+.main_more .nomain_load {
+  display: none;
+}

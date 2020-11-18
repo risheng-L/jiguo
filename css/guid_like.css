@@ -1,0 +1,126 @@
+article {
+  position: relative;
+  width: 1000px;
+  margin: auto;
+}
+article .shouye {
+  width: 1000px;
+  margin: auto;
+  margin: 20px 0px;
+}
+article .shouye a {
+  color: #4c4d53;
+}
+article .box {
+  width: 703px;
+  background-color: #fff;
+}
+article .box .box-top {
+  border-bottom: 1px solid #e7e7e7;
+}
+article .box .box-top .box-tl {
+  float: left;
+  width: 400px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+article .box .box-top .box-tl h2 {
+  font-weight: 400;
+}
+article .box .box-top .box-tl p {
+  height: 30px;
+  margin-top: 20px;
+  text-align: center;
+  width: 80px;
+  background: url('../img/tou.png') no-repeat;
+}
+article .box .box-top .box-tr {
+  float: right;
+  margin-right: 15px;
+}
+article .box .box-top .box-tr p {
+  margin-top: 70px;
+  color: #bab2b0;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+article .box .box-c {
+  margin: 20px;
+}
+article .box .box-c p {
+  font-size: 14px;
+  font-weight: 600;
+}
+article .box .box-t1 {
+  margin: 23px;
+}
+article .box .box-t1 h4 {
+  text-align: center;
+  font-size: 18px;
+}
+article .box .box-t1 span {
+  font-size: 14px;
+  color: #000;
+}
+article .box .box-t1 p {
+  font-size: 14px;
+  color: #000;
+}
+article .box .box-t1 img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+article .box .box-t1 .mo {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+article .box .box-t1 .bi {
+  margin-top: 0px;
+}
+article .box .box-t1 .o {
+  margin-top: 25px;
+}
+article .box .box-t1 .m {
+  margin-bottom: 25px;
+}
+article .box .box-b {
+  margin: 25px;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+article .box .box-b a {
+  color: #b1adaf;
+}
+article .box-min {
+  position: absolute;
+  left: 740px;
+  top: 38px;
+  width: 262px;
+  height: 100px;
+}
+article .box-min .box-min-l {
+  border: 2px solid #f4f4f4;
+  display: inline-block;
+  width: 130px;
+  height: 100px;
+  background-color: #FFF;
+}
+article .box-min .box-min-l .x {
+  margin: 25px;
+  text-align: center;
+}
+article .box-min .xin-c {
+  display: none;
+}
+article .box-min .box-min-r {
+  margin-left: -10px;
+  border: 2px solid #f4f4f4;
+  display: inline-block;
+  width: 130px;
+  height: 100px;
+  background-color: #FFF;
+}
+article .box-min .box-min-r .wx {
+  margin: 29px;
+  text-align: center;
+}

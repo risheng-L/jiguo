@@ -16,13 +16,13 @@
     <!-- 公共酷玩 头部 -->
     <header>
         <div class="header-box clearfix w">
-            <div class="header-top">
+           <div class="header-top">
                 <ul class="clearfix">
                     <li><img src="../img/logonew.png" alt="" width="135px" height="50px"></li>
                     <li><a href="">首页</a></li>
-                    <li class="header-one"><a href="">酷玩</a></li>
-                    <li><a href="../guid/guid_new.html">导购</a></li>
-                    <li><a href="../use//u_auto.html">试用</a></li>
+                    <li><a href="../play/kuwan1.html">酷玩</a></li>
+                    <li class="header-one"><a href="">导购</a></li>
+                    <li><a href="../use/u_auto.html">试用</a></li>
                     <li><a href="">报告</a></li>
                 </ul>
                 <span>
@@ -30,36 +30,32 @@
                     <button>注册</button>
                     <button>登录</button>
                 </span>
-            </div>
+           </div>
         </div>
     </header>
     <div class="find">
-        <p>发现酷玩</p>
+        <p>导购清单</p>
         <div class="find-two">
-            <a href="" class="find-r">最新</a>
-            <a href="kuwan2.html" class="find-n">最热</a>
-            <a href="kuwan3.html" class="find-p">品类</a>
+           <a href="guid_new.html">最新</a>
+           <a href="" class="find-r">最热</a>
         </div>
     </div>
 
     <section>
         <div class="s-body w">
             <ul class="clearfix" id="list">
-                
-            </ul>
-            <ul class="clearfix" id="lis">
                 <!-- <li>
                     <img src="../img/k3.jpg" alt="" class="img-i">
                     <p class="p">SCIO 微型光谱仪</p>
                     <p>可以测定食物成分及营养</p>
-                    <div class="pic clearfix">
-                        <div class="pice">￥512</div>
-                        <div class="po">
-                            <p class="img-l"></p><a href="">{{=value.like}}</a>
-                            <p class="img-o"></p><a href="">{{=value.words}}</a>
-                        </div>
-                    </div>
+                    <span>￥ 1212
+                        <img src="../img/xin.png" alt="" class="img-l"><a href="">3</a> 
+                        <img src="../img/reply.png" alt=""><a href="">3</a>
+                    </span>
                 </li> -->
+            </ul>
+            <ul class="clearfix" id="lis">
+               
             </ul>
         </div>
     </section>
@@ -67,18 +63,18 @@
     <!-- 模板 -->
     <script id="domm" type="text/x-dot-template">
         {{~ it:value:index}}
-            <li>
-                <img src={{=value.img}} alt="" class="img-i">
-                <p class="p">{{=value.text}}</p>
-                <div class="pic clearfix">
-                    <div class="pice">{{=value.price}}</div>
-                    <div class="po clearfix">
-                        <p class="img-l"></p><p>{{=value.like}}</p>
-                        <p class="img-o"></p><p>{{=value.words}}</p>
-                    </div>
+        <li>
+            <img src={{=value.img}} alt="" class="img-i">
+            <p class="p">{{=value.text}}</p>
+            <div class="pic clearfix">
+                
+                <div class="po clearfix">
+                    <p class="img-l"></p><p>{{=value.like}}</p>
+                    <p class="img-o"></p><p>{{=value.words}}</p>
                 </div>
-            </li>
-        {{~}}
+            </div>
+        </li>
+    {{~}}
     </script>
 
     <!-- 加载 -->
@@ -86,14 +82,15 @@
         <p class="nomain_loading">
             <img src="../img/more.png" alt="">
             点击加载更多
-        </p>
+        </p> 
         <p class="nomain_load">
             <img src="../img/loading-icon.gif" alt="">
             正在加载
-        </p>
+        </p> 
     </div>
+    
 
-    <!-- 酷玩底部 -->
+    <!-- 底部 -->
     <footer>
         <div class="footer-box area clearfix">
             <dl>
@@ -153,7 +150,7 @@
     </footer>
     <script src="../js/doT.min.js"></script>
     <script src="../js/jquery.min.js"></script>
-    <script src="../js/kuwan1.js"></script>
+    <script src="../js/guid_new.js"></script>
 </body>
 
 </html>

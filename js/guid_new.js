@@ -1,7 +1,7 @@
 $.ajax({
-    url:'http://192.168.1.64:3000/play/hot',
+    url:'http://192.168.1.64:3000/guid/hot',
     success:function(res){
-        var data=res[0];
+        var data=res;
         var dot_tem=doT.template($('#domm').text());
         $('#list').html(dot_tem(data))
     },
@@ -18,7 +18,7 @@ $('.nomain_loading').on('click', function () {
     $.ajax({
         url:'http://192.168.1.64:3000/play/hot',
         success:function(res){
-            var data=res[2];
+            var data=res[1];
             var dot_tem=doT.template($('#domm').text());
             $('#lis').html(dot_tem(data))
         },
