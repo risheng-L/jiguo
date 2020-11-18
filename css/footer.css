@@ -1,0 +1,31 @@
+footer {
+  background-color: #505050;
+}
+footer .footer-box dl {
+  float: left;
+  margin-top: 35px;
+  margin-right: 20px;
+}
+footer .footer-box dl dt {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+footer .footer-box dl dt a {
+  color: #fff;
+}
+footer .footer-box dl dd a {
+  font-size: 12px;
+  color: #a0a39c;
+}
+footer .footer-box .eg {
+  margin-top: 87px;
+}
+footer .last-foot {
+  text-align: center;
+  margin-top: 88px;
+  padding-bottom: 18px;
+}
+footer .last-foot a {
+  font-size: 12px;
+  color: #a0a39c;
+}

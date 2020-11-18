@@ -1,0 +1,118 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.box {
+  width: 1000px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  position: fixed;
+  top: 100px;
+  left: 300px;
+  z-index: 3;
+}
+.box .box-l {
+  margin: 30px;
+  width: 540px;
+  height: 415px;
+  border: 0px solid #f1f1f1;
+  position: relative;
+  float: left;
+}
+.box .box-l p {
+  width: 120px;
+  height: 41px;
+  font-size: 20px;
+  font-weight: 700px;
+  margin: 10px 0 30px 5px;
+}
+.box .box-l .phone {
+  height: 50px;
+  width: 91%;
+  margin-bottom: 30px;
+  padding-left: 45px;
+}
+.box .box-l .password {
+  height: 50px;
+  width: 91%;
+  margin-bottom: 30px;
+  padding-left: 45px;
+}
+.box .box-l .pas {
+  width: auto;
+  height: 30px;
+  padding: 0 20px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  position: absolute;
+  top: 213px;
+  left: 50px;
+  background-color: #f1f1;
+  border-radius: 5px;
+  display: none;
+}
+.box .box-l span {
+  font-size: 15px;
+}
+.box .box-l .img-t {
+  position: absolute;
+  top: 82px;
+  left: 1px;
+}
+.box .box-l .img-b {
+  position: absolute;
+  top: 167px;
+  left: 1px;
+}
+.box .box-l button {
+  border: 0;
+  width: 210px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  margin: 20px 0 50px 225px;
+}
+.box .box-l a {
+  font-size: 13px;
+}
+.box .box-l .foget {
+  margin-left: 260px;
+  font-size: 13px;
+}
+.box .box-r {
+  float: left;
+}
+.box .box-r h2 {
+  margin: 40px 0;
+}
+.box .box-r .box-rp {
+  width: 268px;
+  height: 262px;
+}
+.box .box-r div {
+  margin-top: 15px;
+}
+.box .box-r div .qq {
+  margin-left: 80px;
+}
+.box .box-r div span {
+  margin-left: 10px;
+  font-size: 15px;
+}
+.box .clos {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

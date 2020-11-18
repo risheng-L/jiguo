@@ -1,0 +1,130 @@
+.border(@a:1px,@b:#D6D6D6){
+    border:@a solid @b;
+}
+.bg(@bg){
+    background-color:@bg;
+}
+.li{
+    list-style: none;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.all{
+    width: 100%;
+    height: 100%;
+    .bg(#F7F7F7);
+    
+    .box{
+        width: 1000px;
+        height: 782px;
+        margin:30px auto;
+        border:1px solid #D6D6D6;
+        border-radius: 2px;
+        .bg(white);
+        //注册文
+        .login-w{
+            font-size: 14px;
+            span{
+               font-weight: 800; 
+               color: red;
+            }
+        }
+        //
+        .loginAll{
+            width: 403px;
+            height: 514px;
+            margin-top:122px;
+            position: relative;
+            
+            ul{
+                li{
+                    font-size: 14px;
+                    .li;
+                    width: auto;
+                    height: auto;
+                    
+                    .pictur{
+                        width: 256px;
+                    }
+                    .four{
+                        .pictur;
+                    }
+                    input{
+                        height:45px;
+                        width: 400px;
+                        border-radius: 7px;
+                        margin-bottom: 28px;
+                        .bg(#F7F7F7);
+                        color:#B2B4B3;
+                        border:0;
+                        border:1px solid #EDEDED;
+                    }
+                    i{
+                        text-align: center;
+                        line-height:45px;
+                        margin-left: 10px; 
+                        padding: 5px 20px;
+                        
+                    }
+                    .sub{
+                        height: 45px;
+                        width: 130px;
+                        text-align: center;
+                        border-radius: 7px;
+                        line-height:45px;
+                        margin-left: 10px;  
+                        color:#B2B4B3;
+                        .bg(white);
+                        border:0;
+                        .border(1px,#A2A2A2);
+
+                    }
+                    .btn{
+                        height:45px;
+                        width: 100%;
+                        .bg(red);
+                        line-height:45px;
+                        text-align: center;
+                        color:white;
+                        border:0;
+                        border-radius: 7px;
+                    }
+                    .mima{
+                        width: auto;
+                        height: 30px;
+                        padding: 0 20px;
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: 12px;
+                        color: red;
+                        .bg(#f1f1);
+                        position: absolute;
+                        top:342px;
+                        left: 30px;
+                        border-radius: 5px;
+                        display: none;
+                    }
+                    .mimas{
+                        width: auto;
+                        height: 30px;
+                        padding: 0 20px;
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: 12px;
+                        color: red;
+                        .bg(#f1f1);
+                        position: absolute;
+                        top:417px;
+                        left: 30px;
+                        border-radius: 5px;
+                        display: none;
+                    }
+
+                }
+            }
+        }
+    }
+}
