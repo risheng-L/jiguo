@@ -148,6 +148,7 @@ $('.passwordnow').on('blur',function(){
 
 //提交
 $('.btn').on('click',function(){
+    $('.box').hide();
     var ajax_=true;
     $('.loginAll input').each(function(){
         var bl=$(this)[0].bool;
@@ -158,25 +159,23 @@ $('.btn').on('click',function(){
         }
     });
     
-if(ajax_){
-   
-    
+    if(ajax_){
     $.ajax({
        url:'http://192.168.1.64:3000/users/register',
        type:'post',
        data:{
-           username:$('.phone').val(),
+           username:$('.username').val(),
            password:$('.password').val()
        },
        success:function(res){
            console.log(res);
-        //    alert(res.msg);
+           alert(res.msg);
         // window.open('register.html');
        }, 
        dataType:'json',
     });
-}
-});
+    }
+    });
 
 
 
