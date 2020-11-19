@@ -76,8 +76,27 @@ nav ul li:hover {
   margin-left: 10px;
 }
 #main .main-one .main-l .main-lp .main-lp-div .p-p {
-  margin-left: 480px;
+  margin-left: 450px;
   opacity: 1;
+}
+#main .main-one .main-l .main-lp .main-lp-div input {
+  width: 150px;
+  height: 20px;
+  position: absolute;
+  top: 103px;
+  left: 505px;
+  background-color: white;
+  border-radius: 8px;
+  display: none;
+}
+#main .main-one .main-l .main-lp .main-lp-div button {
+  position: absolute;
+  top: 103px;
+  left: 660px;
+  background-color: #998a8ab4;
+  border-radius: 5px;
+  color: white;
+  display: none;
 }
 #main .main-one .main-l .main-lb {
   height: 50px;
@@ -132,8 +151,27 @@ nav ul li:hover {
   margin-left: 10px;
 }
 #main .main-one .main-ll .main-lp .main-lp-div .p-p {
-  margin-left: 480px;
+  margin-left: 450px;
   opacity: 1;
+}
+#main .main-one .main-ll .main-lp .main-lp-div input {
+  width: 150px;
+  height: 20px;
+  position: absolute;
+  top: 103px;
+  left: 505px;
+  background-color: white;
+  border-radius: 8px;
+  display: none;
+}
+#main .main-one .main-ll .main-lp .main-lp-div button {
+  position: absolute;
+  top: 103px;
+  left: 660px;
+  background-color: #998a8ab4;
+  border-radius: 5px;
+  color: white;
+  display: none;
 }
 #main .main-one .main-ll .main-lb {
   height: 50px;

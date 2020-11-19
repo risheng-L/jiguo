@@ -53,12 +53,6 @@
   border: 0;
   border: 1px solid #EDEDED;
 }
-.all .box .loginAll ul li i {
-  text-align: center;
-  line-height: 45px;
-  margin-left: 10px;
-  padding: 5px 20px;
-}
 .all .box .loginAll ul li .sub {
   height: 45px;
   width: 130px;

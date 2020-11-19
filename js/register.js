@@ -34,25 +34,22 @@ $('.password').on('blur',function(){
     }
 });
 $('.btn').on('click',function(){
-    var phone = $('.phone').val();
 var pass = $('.password').val();
-    if(phone==''&&pass==''){
+    if($('.phone').val()==''&&$('.password').val()==''){
         alert('请输入手机号和密码');
     }else if($('.phone').css('color')=='rgb(255, 0, 0)'||$('.password').css('color')=='rgb(255, 0, 0)'){
         alert('手机号码或者密码格式不正确！')
     } else{
         $.ajax({
             url:'http://192.168.1.64:3000/users/login',
-            type:'get',
-            data:{
-                type:'register',
-                phone:username,
-                pass:password
+            type:'post',
+            data:{  
+                username:$('.phone').val(),
+                password:$('.password').val()
             },
-            success:function (json) {
-                json=JSON.parse(json);
-                console.log(json);
-                alert(json.msg);
+            success:function (res) {
+                console.log(res);
+                // alert(res.msg);
                 
                 if($('.checkbox').is(':checked')){
                             localStorage.setItem('phone',$('.phone').val());

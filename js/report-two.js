@@ -1,8 +1,8 @@
+//弹出登录
+$('.box').hide();
 $('.login').on('click',function(){
     $('.box').toggle();
 })
-
-
 //返回顶部
 //显示隐藏
 $(window).scroll(function(){
@@ -24,4 +24,4 @@ $('.up').on('click',function(){
         }
     });
 },100);
-//denglu
+

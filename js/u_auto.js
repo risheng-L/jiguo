@@ -25,4 +25,9 @@ $('.nomain_loading').on('click', function () {
         },
         dataType:'json'
     })
+});
+
+//弹出登录
+$('.login').on('click',function(){
+    $('.box').toggle();
 })

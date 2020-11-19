@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/kuwan_body.css">
     <link rel="stylesheet" href="../css/u_auto.css">
+    <link rel="stylesheet" href="../css/register.css">
     
 </head>
 
@@ -23,13 +24,13 @@
                     <li><a href="">首页</a></li>
                     <li><a href="../play/kuwan1.html">酷玩</a></li>
                     <li><a href="../guid/guid_new.html">导购</a></li>
-                    <li class="header-one"><a href="">试用</a></li>
-                    <li><a href="">报告</a></li>
+                    <li class="header-one"><a href="./u_auto.html">试用</a></li>
+                    <li><a href="../report/report_one.html">报告</a></li>
                 </ul>
                 <span>
                     <img src="../img/search.png" alt="">
-                    <button>注册</button>
-                    <button>登录</button>
+                    <button class="register"><a href="./../login.html">注册</a></button>
+                    <button class="login">登录</button>
                 </span>
            </div>
         </div>
@@ -50,6 +51,33 @@
     </div>
 
     <section>
+        <!-- 登录 -->
+    <div class="box" hidden >
+        <div class="box-l">
+            <p>极果账号登录</p>
+            <input type="text" name="" class="phone" placeholder="手机号码"><br>
+            <input type="password" class="password" placeholder="密码"><br>
+            <span class="pas"></span>
+            <input type="checkbox" class="checkbox"><sapn>下次自动登录</sapn>
+            <button class="btn">登录</button><br>
+            <a href="#">注册新账号</a>
+            <span class="foget">忘记密码?</span>
+            <img class="img-t" src="../imgs/phone.png"/>
+            <img class="img-b" src="../imgs/pass.png"/>
+        </div>
+        <div class="box-r">
+            <h2>社交网络账号登录</h2>
+            <img class="box-rp" src="../imgs/weixin_code.png"/>
+            <div>
+                <img src="../imgs/weibo.png"/>
+                <span>微博</span>
+                <img class="qq" src="../imgs/qq.png"/>
+                <span>QQ</span>
+            </div>
+        </div>
+        <img class="clos" src="../imgs/clos.png">
+
+    </div>
         <div class="s-body w">
             <ul class="clearfix">
                <li>
@@ -365,6 +393,7 @@
     <script src="../js/doT.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/u_auto.js"></script>
+    <script src="../js/register.js"></script>
 </body>
 
 </html>
