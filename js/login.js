@@ -1,6 +1,7 @@
 
 
 //手机号
+function jiguo(){
 $('.phone').on('focus',function(){
     $(this).css('color','black');
     $(this).val('');
@@ -143,11 +144,11 @@ $('.passwordnow').on('blur',function(){
         $(this).next('.mimas').hide();
     }
 });
-
-
+}
 
 //提交
 $('.btn').on('click',function(){
+    jiguo();
     // $('.box').hide();
     var ajax_=true;
     $('.loginAll input').each(function(){
@@ -156,9 +157,12 @@ $('.btn').on('click',function(){
             alert('请按照正确的格式填写^^');
             ajax_=false;
             return false;
+        }else if($(this).val()==''){
+            alert('请按照正确的格式填写^^');
+            ajax_=false;
+            return false;
         }
     });
-    
     if(ajax_){
     $.ajax({
        url:'http://192.168.1.64:3000/users/register',
@@ -170,7 +174,7 @@ $('.btn').on('click',function(){
        success:function(res){
            console.log(res);
            alert(res.msg);
-        // window.open('register.html');
+        window.open('register.html');
        }, 
        dataType:'json',
     });

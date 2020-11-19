@@ -120,6 +120,13 @@
                     <img src="../img/share_yj1.png" alt="">
                     <img src="../img/shareh_yj1.png" alt="" class="xin-c">
                     <p>分享</p>
+                    <div class="bshare-custom">
+                        <div class="bsPromo bsPromo2"></div>
+                        <a title="分享到QQ空间" class="bshare-qzone"></a>
+                        <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                        <a title="分享到QQ好友" class="bshare-qqim" href="javascript:void(0);"></a>
+                        <a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a>
+                    </div>
                 </div>
 
             </div>
@@ -186,6 +193,29 @@
     <script src="../js/doT.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/guid_new.js"></script>
+    <script type="text/javascript" charset="utf-8"src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+    <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+    <script>
+        $('.x img:nth-of-type(1)').on('click', function () {
+            $(this).hide();
+            $(this).next().show();
+            $(this).siblings('p').text('喜欢16')
+        })
+        $('.x img:nth-of-type(2)').on('click', function () {
+            $(this).hide();
+            $(this).prev().show();
+            $(this).siblings('p').text('喜欢15')
+        })
+        $('.wx img:nth-of-type(1)').on('click', function () {
+            $(this).hide();
+            $(this).next().show();
+        })
+        $('.wx img:nth-of-type(2)').on('click', function () {
+            $(this).hide();
+            $(this).prev().show();
+        })
+
+    </script>
     
 </body>
 
