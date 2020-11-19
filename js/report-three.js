@@ -23,7 +23,7 @@ $('.p-one').mouseenter(function(){
     })
 });
 
-//点击
+//点击评论
 
     $('.p-p').on('click',function(){
         $(this).next().show();
@@ -34,6 +34,10 @@ $('.p-one').mouseenter(function(){
     $('.p-t').on('click',function(){
         $(this).siblings('input').show();
         $(this).siblings('button').show();
+        $(this).siblings('input').on('focus',function(){
+            $(this).val('');
+            $(this).css('color','black');
+        });
         $(this).siblings('button').on('click',function(){
             if($(this).siblings('input').val() !=''){
             $(this).siblings('input').hide();
