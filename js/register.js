@@ -1,6 +1,7 @@
 //关闭
 $('.clos').on('click',function(){
     $('.box').hide();
+    $('.zhe').hide();
 });
 $('.username').on('focus',function(){
     $(this).val('');

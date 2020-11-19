@@ -148,7 +148,7 @@ $('.passwordnow').on('blur',function(){
 
 //提交
 $('.btn').on('click',function(){
-    $('.box').hide();
+    // $('.box').hide();
     var ajax_=true;
     $('.loginAll input').each(function(){
         var bl=$(this)[0].bool;
