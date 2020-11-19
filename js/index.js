@@ -18,79 +18,79 @@ function ssy() {
 ssy();
 
 //轮播
-var timers = null,timers_1 = null;
-    var index = 1;
-        $('.lunbo_scroll').scrollLeft($('.lunbo_so ul').eq(0).css('width').split('p')[0]);
-        function autochange_(m){
-        var num = 0;
-        var maxnum = 20;
-        var start = $('.lunbo_scroll').scrollLeft();
-        var end = $('.lunbo_so ul').eq(0).css('width').split('p')[0]*m;
-        var everynum = (end - start)/maxnum;
-        timers = setInterval(function(){
-            num++;
-            if(num>=maxnum){
-                num = 0;
-                clearInterval(timers);
-            }
-            start += everynum;
-            $('.lunbo_scroll').scrollLeft(start);
-        },20);
-    }
-    //移出
-    function automove_(){
-        clearInterval(timers_1)
-        timers_1 = setInterval(function(){
+var timers = null, timers_1 = null;
+var index = 1;
+$('.lunbo_scroll').scrollLeft($('.lunbo_so ul').eq(0).css('width').split('p')[0]);
+function autochange_(m) {
+    var num = 0;
+    var maxnum = 20;
+    var start = $('.lunbo_scroll').scrollLeft();
+    var end = $('.lunbo_so ul').eq(0).css('width').split('p')[0] * m;
+    var everynum = (end - start) / maxnum;
+    timers = setInterval(function () {
+        num++;
+        if (num >= maxnum) {
+            num = 0;
             clearInterval(timers);
-            index++;
-            if(index>=$('.lunbo_so ul').length){
-                index = 1;
-                $('.lunbo_scroll').scrollLeft(0);
-            }
-            autochange_(index);
-        },2000);
-    }
-    //清除
-    function mouse(){
-        $('.lunbo_so ul').each(function(indexs,item){
-           $(item).hover(function(){
-               clearInterval(timers);
-               clearInterval(timers_1);
-           },function(){
-               automove_(); 
-               autochange_(indexs);
-           });
-        });
-    }
-    function clicked(){
-        $('.prev').on('click',function(){
-            clearInterval(timers)
-            clearInterval(timers_1)
-            index--;
-            if(index == 0){index = $('.lunbo_so ul').length;}
+        }
+        start += everynum;
+        $('.lunbo_scroll').scrollLeft(start);
+    }, 20);
+}
+//移出
+function automove_() {
+    clearInterval(timers_1)
+    timers_1 = setInterval(function () {
+        clearInterval(timers);
+        index++;
+        if (index >= $('.lunbo_so ul').length) {
+            index = 1;
+            $('.lunbo_scroll').scrollLeft(0);
+        }
+        autochange_(index);
+    }, 2000);
+}
+//清除
+function mouse() {
+    $('.lunbo_so ul').each(function (indexs, item) {
+        $(item).hover(function () {
+            clearInterval(timers);
+            clearInterval(timers_1);
+        }, function () {
             automove_();
-            autochange_(index);
+            autochange_(indexs);
         });
-        $('.next').on('click',function(){
-            clearInterval(timers)
-            clearInterval(timers_1)
-            index++;
-            if(index == $('.lunbo_so ul').length){index = 0;}
-            automove_();
-            autochange_(index);
-        });
-    }
-    automove_();
-    mouse();
-    clicked();
-
-    // 移入图片变模糊
-
-    $('li').hover(function(){
-        $(this).find('img').toggleClass('img_l');
-    },function(){
-        $(this).find('img').toggleClass('img_l');
     });
+}
+function clicked() {
+    $('.prev').on('click', function () {
+        clearInterval(timers)
+        clearInterval(timers_1)
+        index--;
+        if (index == 0) { index = $('.lunbo_so ul').length; }
+        automove_();
+        autochange_(index);
+    });
+    $('.next').on('click', function () {
+        clearInterval(timers)
+        clearInterval(timers_1)
+        index++;
+        if (index == $('.lunbo_so ul').length) { index = 0; }
+        automove_();
+        autochange_(index);
+    });
+}
+automove_();
+mouse();
+clicked();
+
+// 移入图片变模糊
+
+$('li').hover(function () {
+    $(this).find('img').toggleClass('img_l');
+}, function () {
+    $(this).find('img').toggleClass('img_l');
+});
 
 
 //点小心心
@@ -106,7 +106,9 @@ $('article ul li span:nth-of-type(3) img').on('click', function () {
     $(this).parent().html('<img src="./img/reply.png">' + num);
 
 })
-
+var nnn = $('#list');
+nnn.children('li')
+console.log(nnn.children('li'))
 
 
 
