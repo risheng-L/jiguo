@@ -2,13 +2,13 @@
 $('.clos').on('click',function(){
     $('.box').hide();
 });
-$('.phone').on('focus',function(){
+$('.username').on('focus',function(){
     $(this).val('');
     $(this).css('color','black');
 });
-$('.phone').on('blur',function(){
-    if($('.phone').val().search(/^1[3578]\d{9}$/)==-1){
-    $(this).val('手机号格式不正确！');
+$('.username').on('blur',function(){
+    if($('.username').val().search(/^[^\s\u4e00-\u9fa5]{6,12}$/)==-1){
+    $(this).val('用户名格式不正确！');
     $(this).css('color','red');
     $(this)[0].bool=false;
 };
@@ -34,25 +34,26 @@ $('.password').on('blur',function(){
     }
 });
 $('.btn').on('click',function(){
+    $('.box').hide();
 var pass = $('.password').val();
-    if($('.phone').val()==''&&$('.password').val()==''){
+    if($('.username').val()=='' && $('.password').val()==''){
         alert('请输入手机号和密码');
-    }else if($('.phone').css('color')=='rgb(255, 0, 0)'||$('.password').css('color')=='rgb(255, 0, 0)'){
+    }else if($('.username').css('color')=='rgb(255, 0, 0)'||$('.password').css('color')=='rgb(255, 0, 0)'){
         alert('手机号码或者密码格式不正确！')
     } else{
         $.ajax({
             url:'http://192.168.1.64:3000/users/login',
             type:'post',
             data:{  
-                username:$('.phone').val(),
+                username:$('.username').val(),
                 password:$('.password').val()
             },
             success:function (res) {
                 console.log(res);
-                // alert(res.msg);
+                alert(res.msg);
                 
                 if($('.checkbox').is(':checked')){
-                            localStorage.setItem('phone',$('.phone').val());
+                            localStorage.setItem('username',$('.username').val());
                             localStorage.setItem('pss',$('.password').val());
                             localStorage.setItem('tick',$('.checkbox').is(':checked'));
                         }   
@@ -61,12 +62,11 @@ var pass = $('.password').val();
                 }
             }
         });
-   }
-   
+   } 
     });
 //存储
 if(localStorage.getItem('tick')){
-        $('.phone').val(localStorage.getItem('phone'));
+        $('.username').val(localStorage.getItem('username'));
         $('.password').val(localStorage.getItem('pss'));
         $('.checkbox').attr('checked',localStorage.getItem('tick'));
     }
