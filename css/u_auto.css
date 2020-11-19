@@ -94,6 +94,12 @@ section .s-body ul li .locad_p {
   background-color: #fcf4cd;
   border-radius: 0px 10px 0px 10px;
 }
+#list li:last-of-type {
+  display: none;
+}
+li:hover {
+  transform: scale(1.1);
+}
 .main_more {
   color: #fe483f;
   text-align: center;

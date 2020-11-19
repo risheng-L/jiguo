@@ -40,6 +40,14 @@ section .s-body ul li .pic .po p {
   color: #bca4b1;
 }
 section .s-body ul li .pic .po .img-l {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: 3px;
+  background: url(../img/xin.png) no-repeat;
+}
+section .s-body ul li .pic .po .img-w {
+  display: none;
   width: 12px;
   height: 12px;
   margin-top: 3px;
@@ -50,6 +58,9 @@ section .s-body ul li .pic .po .img-o {
   height: 12px;
   margin-top: 3px;
   background: url(../img/reply.png) no-repeat;
+}
+li:hover {
+  transform: scale(1.1);
 }
 .main_more {
   color: #fe483f;
